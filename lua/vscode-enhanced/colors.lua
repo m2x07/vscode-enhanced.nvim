@@ -161,7 +161,7 @@ colors.get_colors = function()
     mycolors.vscPopupHighlightLightBlue = '#d7eafe'
 
     -- Extend the colors with overrides passed by `color_overrides`
-    local config = require('vscode.config')
+    local config = require('vscode-enhanced.config')
     if config.opts.color_overrides then
         mycolors = vim.tbl_extend('force', mycolors, config.opts.color_overrides)
     end
